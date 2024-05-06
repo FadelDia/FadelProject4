@@ -1,0 +1,15 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Set the aesthetic style of the plots
+sns.set(style='whitegrid')
+
+# Create a histogram for the 'magnitude' column
+plt.figure(figsize=(10, 6))
+ax = sns.histplot(df_final['magnitude'], bins=30, kde=True, color='blue')
+ax.set_title('Distribution of Earthquake Magnitudes', fontsize=16)
+ax.set_xlabel('Magnitude', fontsize=14)
+ax.set_ylabel('Frequency', fontsize=14)
+
+# Show the plot
+plt.show()
