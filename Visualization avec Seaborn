@@ -1,0 +1,4 @@
+from matplotlib import pyplot as plt
+import seaborn as sns
+_df_33.groupby('Studios').size().plot(kind='barh', color=sns.palettes.mpl_palette('Dark2'))
+plt.gca().spines[['top', 'right',]].set_visible(False)
